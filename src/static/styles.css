@@ -95,19 +95,39 @@ section h3 {
 }
 
 .participants-section ul li {
-  padding: 4px 0 4px 20px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
   font-size: 14px;
   color: #444;
+  border-radius: 4px;
+  transition: background-color 0.15s;
 }
 
-.participants-section ul li::before {
-  content: "\25CF";
-  color: #1a237e;
-  font-size: 8px;
-  position: absolute;
-  left: 4px;
-  top: 7px;
+.participants-section ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.participants-section ul li .participant-email {
+  flex: 1;
+}
+
+.participants-section ul li .remove-btn {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.participants-section ul li .remove-btn:hover {
+  color: #c62828;
+  background-color: #ffebee;
 }
 
 .participants-section .no-participants {
